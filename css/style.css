@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.fondo {
+    background-color: black
+}
+
+
+.principal {
+    background-color: rgb(0, 105, 153)
+}
+
+h1 {
+    color: beige;
+margin-bottom: 20px;
+    text-align: center;
+}
+
+h2 , h3 {
+    text-decoration:underline;
+}
+
+p {
+    color: white;
+    margin: 15px;
+}
+
+
+nav {
+    margin: 20px;
+    position: sticky;
+    top: 0px;
+    z-index: 1px;
+}
+
+nav ul li {
+list-style-type: none;
+color: beige;
+display: inline-block;
+margin: 10px;
+text-decoration: none;
+padding: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(139, 146, 150);
+}
+
+
+footer {
+    margin: 20px;
+    color: beige;
+    text-align: center;
+}
+
+img {
+    margin-left: 150px;
+    border-radius: 20px;
+}
+
+
+.img-servicios {
+    height: 500px;
+    width: 800px;
+}
+
+
+.formulario {
+    color: antiquewhite;
+}€
+
+
+.principal {
+display: grid;
+grid-template-columns: repeat(1, 1fr);
+grid-template-rows: repeat(5, 1fr);  
+grid-template-areas: "parte1"
+                    "parte2"
+                    "parte3"
+                    "parte4"
+                    "parte5";
+}
+
+.bloque1 {
+grid-area:parte1;
+}
+
+.bloque2 {
+grid-area: parte2;
+}
+
+.bloque3 {
+grid-area: parte3;
+}
+
+.bloque4 {
+grid-area: parte4;
+}
+
+.bloque5 {
+grid-area: parte5;
+}
+
+
+@media screen and (min-width: 720px){
+
+    .principal {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);  
+        grid-template-areas: "parte1" "parte2"                      
+                            "parte3" "parte4"
+                            "parte5";
+        }
+    
+}
+
+@media screen and (min-width: 1366px){
+    .principal {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);  
+        grid-template-areas: "parte1" "parte2"                      
+                            "parte3" "parte4"
+                            "parte5";
+        }
+
+}
